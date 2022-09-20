@@ -3,3 +3,7 @@ function greet(message) {
 }
 
 greet()
+
+function response(message) {
+    return message
+}
