@@ -1,9 +1,10 @@
-function greet(message) {
-    return `Hi ${message}`
-}
+module.exports = class Human {
+    constructor(firstName, lastName) {
+        this.firstName = firstName
+        this.lastName = lastName
+    }
 
-greet()
-
-function response(message) {
-    return message
+    static printHumanDetails() {
+        return this.firstName + " " + this.lastName
+    }
 }
